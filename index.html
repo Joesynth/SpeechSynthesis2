@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="icon" href="#.png">
+	<link rel="stylesheet" href="#.css"/>
+	<script src="#/#.js"></script>
+	
+	<style>
+		body {background-color: lightslategray;}	
+	</style>
+
+</head>
+<body>
+
+
+<textarea></textarea>
+<button> Fale! </button>
+
+
+
+<script>
+var text = document.querySelector('textarea');
+var bf = document.querySelector('button');
+function falar() {
+var speech = new SpeechSynthesisUtterance();
+speech.text = text.value;
+speechSynthesis.speak(speech);
+}
+bf.onclick = function (e) {
+e.preventDefault();
+falar();
+};
+</script>	
+
+</body>
+</html>
